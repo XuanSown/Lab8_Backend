@@ -10,7 +10,6 @@ export default {
     methods: {
         login(){
             localStorage.setItem("isAuthenticated", "true");
-            alert("Bạn đã đăng nhập thành công!");
 
             // Chuyển hướng đến trang Dashboard sau khi đăng nhập
             this.$router.push({ name: 'Dashboard' });

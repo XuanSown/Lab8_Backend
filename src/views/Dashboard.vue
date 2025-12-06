@@ -11,7 +11,6 @@ export default {
     methods: {
         logout() {
             localStorage.removeItem("isAuthenticated");
-            alert("Bạn đã đăng xuất thành công!");
             this.$router.push({ name: "Login" });
         },
     },

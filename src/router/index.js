@@ -6,7 +6,7 @@ import Dashboard from '../views/Dashboard.vue';
 import Login from '../views/Login.vue';
 import UserProfile from '../views/UserProfile.vue';
 import UserProfileInfo from '../views/UserProfileInfo.vue';
-import UserProfileSettings from '../views/UserProfileSettings.vue';;
+import UserProfileSettings from '../views/UserProfileSettings.vue';
 
 const routes = [
     {
@@ -44,7 +44,7 @@ const routes = [
         ],
     },
     {
-        path: 'login',
+        path: '/login',
         name: 'Login',
         component: Login
     },
@@ -58,7 +58,7 @@ const routes = [
 
 //Tạo router
 const router = createRouter({
-    history: createWebHistory(ProcessingInstruction.env.BASE_URL),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes,
 });
 
