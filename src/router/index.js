@@ -5,8 +5,8 @@ import BlogPost from '../views/BlogPost.vue';
 import Dashboard from '../views/Dashboard.vue';
 import Login from '../views/Login.vue';
 import UserProfile from '../views/UserProfile.vue';
-import UserProfileInfo from '../components/UserProfileInfo.vue';
-import UserProfileSettings from '../components/UserProfileSettings.vue';
+import UserProfileInfo from '../views/UserProfileInfo.vue';
+import UserProfileSettings from '../views/UserProfileSettings.vue';;
 
 const routes = [
     {
