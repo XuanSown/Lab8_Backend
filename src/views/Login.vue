@@ -1,0 +1,20 @@
+<template>
+    <div>
+        <h1>Đăng nhập</h1>
+        <button @click="login">Đăng nhập ngay</button>
+    </div>
+</template>
+
+<script setup>
+export default {
+    methods: {
+        login(){
+            localStorage.setItem("isAuthenticated", "true");
+            alert("Bạn đã đăng nhập thành công!");
+
+            // Chuyển hướng đến trang Dashboard sau khi đăng nhập
+            this.$router.push({ name: 'Dashboard' });
+        },
+    },
+};
+</script>
